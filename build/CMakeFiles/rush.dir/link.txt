@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/rush.dir/main.cpp.o -o rush  -Wl,-rpath,/usr/local/lib libburst_graph.a /usr/local/lib/libboost_graph.so.1.75.0 /usr/local/lib/libboost_regex.so.1.75.0 -licudata -licui18n -licuuc 
