@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/load_test.dir/test/load_graph_test.cpp.o -o load_test  -Wl,-rpath,/usr/local/lib libburst_graph.a /usr/local/lib/libboost_graph.so.1.75.0 /usr/local/lib/libboost_regex.so.1.75.0 -licudata -licui18n -licuuc 

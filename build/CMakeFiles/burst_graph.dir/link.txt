@@ -1,2 +1,0 @@
-/usr/bin/ar qc libburst_graph.a CMakeFiles/burst_graph.dir/burst_graph/burst_graph.cpp.o
-/usr/bin/ranlib libburst_graph.a
