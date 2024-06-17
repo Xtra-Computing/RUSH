@@ -46,7 +46,7 @@ For example, a 4-clique data graph with weight for each edge as 0.5 (with fake t
 We provide some test dataset and query example in dataset folder. The complete NFT graph datasets used in our paper can be downloaded [here](https://livegraphlab.github.io/)
 
 ## Example
-On the 'build' directory, one can conduct the following script to conduct the burst subgraph detection on the example bayc graph.
+On the 'build' directory, one can run the following script to conduct the burst subgraph detection on the example bayc graph.
 ```shell
 mkdir bayc_potential_fraud
 ./rush ../dataset/static.txt ../dataset/increment.txt 1650364600 3600 1 1 ./bayc_potential_fraud
