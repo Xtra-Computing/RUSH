@@ -3,11 +3,15 @@
 
 In the ever-evolving landscape of e-commerce, the real-time detection of fraudulent activities is crucial for platforms like Grab, one of Southeast Asia's largest tech enterprises, known for its diverse services including digital payments and food delivery. This paper proposes RUSH (Real-time bUrst SubgrapH discovery framework), a pioneering framework tailored for real-time fraud detection within dynamic graphs. RUSH addresses the phenomenon of `burst subgraphs,' characterized by rapid increases in subgraph density within short timeframes—a scenario traditional fraud detection methods, which analyze static graphs, and existing incremental frameworks struggle to efficiently manage due to their inability to handle sudden surges in data. By focusing on both the density and the rate of change of subgraphs, RUSH identifies crucial indicators of fraud. Utilizing a sophisticated incremental update mechanism, RUSH processes large-scale graphs with high efficiency, catering to the demands of the fast-paced e-commerce industry. Furthermore, RUSH is equipped with user-friendly APIs, facilitating the customization and integration of specific fraud detection metrics. Through extensive experimental evaluations on real-world datasets, we demonstrate RUSH's efficiency and effectiveness in fraud detection. Through case studies, we illustrate how RUSH can effectively detect fraud communities within various Grab business scenarios and identify wash trading in NFT networks.
 
+This is the source code for the paper: 'RUSH: Real-time Burst Subgraph Detection in Dynamic Graphs'.
+
 ## Compile
 
 Our framework requires c++18 and GCC 8.x (or later). One can compile the code by executing the following commands.
 
 ```shell
+git clone https://github.com/Alexcyh7/RUSH.git
+cd RUSH
 mkdir build
 cd build
 cmake ..
@@ -49,7 +53,5 @@ We provide some test dataset and query example in dataset folder. The complete N
 On the 'build' directory, one can run the following script to conduct the burst subgraph detection on the example bayc graph.
 ```shell
 mkdir bayc_potential_fraud
-./rush ../dataset/static.txt ../dataset/increment.txt 1650364600 3600 1 1 ./bayc_potential_fraud
+./rush ../dataset/static.txt ../dataset/increment.txt 1650364600 3600 1 16 ./bayc_potential_fraud
 ```
-
-
