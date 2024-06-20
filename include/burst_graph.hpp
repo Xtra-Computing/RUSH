@@ -50,7 +50,8 @@ public:
     // Enumeration to specify weight function types
     enum class WeightFunctionType {
         TotalWeight,
-        Degree
+        Degree,
+	User
     };
 
     BurstGraphType g;  // The BurstGraph instance

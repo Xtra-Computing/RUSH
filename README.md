@@ -55,3 +55,14 @@ On the 'build' directory, one can run the following script to conduct the burst 
 mkdir bayc_potential_fraud
 ./rush ../dataset/static.txt ../dataset/increment.txt 1650364600 3600 1 16 ./bayc_potential_fraud
 ```
+
+## Algorithm Scratch
+We provde a scratch code to show how a user can use RUSH library to design a burst detection system.
+The BuildWeightMap function take type for the weight function as input, user can input WeightFunctionType::User as input and implement their own weight function.
+```c
+BurstGraph<false> graph;
+graph.LoadGraphFromFile(input_graph_file);
+graph.BuildWeightMap(WeightFunctionType::Degree);
+graph.GeneratePeelingSequence();
+graph.FindDenseSubgraph();
+```
