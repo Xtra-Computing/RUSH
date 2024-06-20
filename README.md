@@ -58,7 +58,7 @@ mkdir bayc_potential_fraud
 
 ## Algorithm Scratch
 We provde a scratch code to show how a user can use RUSH library to design a burst detection system.
-The BuildWeightMap function take type for the weight function as input, user can input WeightFunctionType::User as input and implement their own weight function.
+The BuildWeightMap function takes the type of weight function as input. Users can specify WeightFunctionType::User and implement their own weight function.
 ```c
 BurstGraph<false> graph;
 graph.LoadGraphFromFile(input_graph_file);
