@@ -5,6 +5,12 @@ In the ever-evolving landscape of e-commerce, the real-time detection of fraudul
 
 This is the source code for the paper: 'RUSH: Real-time Burst Subgraph Detection in Dynamic Graphs'.
 
+## Homepage and Paper
+
++ Homepage (RUSH): [https://github.com/Xtra-Computing/RUSH](https://github.com/Xtra-Computing/RUSH)
++ Paper Access:
+    - **VLDB**: [https://www.vldb.org/pvldb/vol17/p3657-chen.pdf](https://www.vldb.org/pvldb/vol17/p3657-chen.pdf)
+ 
 ## Compile
 
 Our framework requires c++18 and GCC 8.x (or later). One can compile the code by executing the following commands.
